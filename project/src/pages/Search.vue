@@ -24,12 +24,7 @@
           </ul>
       </div>
       <router-view :key="keyTime"></router-view>
-
     </div>
-
-
-
-    
     <div class="keywords" v-else-if="keywordsRes.length !== 0">
       <div class="key"
       @click="handleClick(inputValue)"

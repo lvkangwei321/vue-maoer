@@ -4,7 +4,7 @@
       class="commic"
       @click="handleSendClick"
       :style="{background: 'url(' + imgurl +')'}"
-      :class="{'full-screen': fullScreen,'bg-video' : changeMedia}"
+      :class="{'full-screen': fullScreen,'bg-video' : changeMedia , 'bg-play' : currentTime != 0 }"
     >
       <img
         :src="introRes.front_cover "
@@ -229,10 +229,15 @@ export default {
 </script>
 
 <style lang = "stylus" scoped>
+.bg-play{
+  background : none !important
+}
 .bgImg{
-  border-radius : 0 !important
-  background-repeat: no-repeat !important
-  background-size: 100% 100% !important
+  border-radius : 0 !important;
+  background-repeat: no-repeat !important;
+  height 100% !important;
+  background-size: 100% 100% !important;
+  bottom :0 !important;
 }
 #audio {
   position: relative;
