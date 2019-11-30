@@ -206,7 +206,6 @@ export default {
     var imgRes = await get({
       url: `/api/sound/getSortedImage?soundid=${this.$route.params.id}`
     });
-    console.log(imgRes);
     this.imgRes = imgRes.info;
     if (this.introRes.videourl !== "") {
       this.videoExist = true;

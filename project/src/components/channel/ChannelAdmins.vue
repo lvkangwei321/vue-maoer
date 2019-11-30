@@ -36,7 +36,6 @@ async mounted() {
 },
 methods: {
   handleClick(item){
-    console.log(item)
     window.open(`https://www.missevan.com/${item.id}/sound`)
   }
 },

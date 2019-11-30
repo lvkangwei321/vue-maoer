@@ -99,7 +99,6 @@ export default {
     },
     mounted() {
         var rememberData = store.get('remember')
-        console.log(rememberData);
         if(rememberData != undefined){
             this.formData.username = rememberData.username
             this.formData.password = rememberData.password

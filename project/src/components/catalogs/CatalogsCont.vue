@@ -78,8 +78,6 @@ import { get } from "utils/http.js";
 export default {
   methods: {
     handleClick(item) {
-        console.log(item);
-        
       this.$router.push(`/sound/${item.id}`);
     }
   },
@@ -127,8 +125,6 @@ export default {
         url: `/api/mobileWeb/catalogmenu?order=3&cid=${this.sonId[key]}&page_size=4`
       });
       this.itemRes.push(itemRes.info.Datas);
-      console.log(this.itemRes);
-      
     }
   }
 };

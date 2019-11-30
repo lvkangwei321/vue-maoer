@@ -27,8 +27,6 @@ export default {
       url: "/api/mobileWeb/catalogroot"
     });
     this.catalogsList = catalogsRes.info;
-    console.log(this.catalogsList);
-    
     this.catalogsList.splice(5, 0, {
       title: "日抓",
       id: "41",

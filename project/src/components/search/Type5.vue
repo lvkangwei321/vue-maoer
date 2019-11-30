@@ -37,7 +37,6 @@ async mounted() {
 },
 methods: {
     handleClick(item){
-        console.log(item)
         this.$router.push(`/drama/${item.id}`)
     }
 },

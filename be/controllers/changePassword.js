@@ -25,7 +25,6 @@ const sendCode = async function(req,res,next){
         })
       }
       else{
-        console.log(code);
         sendMail(username,code)
         res.render('succ', {
           data: JSON.stringify({

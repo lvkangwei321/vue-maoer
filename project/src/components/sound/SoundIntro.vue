@@ -115,7 +115,6 @@ export default {
       return Y + M + D + h + m + s;
     },
     handleDramaClick(item) {
-      console.log(item);
       this.$router.push(`/drama/${item.id}`);
     },
     handleExpandClick() {

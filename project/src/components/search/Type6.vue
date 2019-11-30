@@ -38,7 +38,6 @@ async mounted() {
    var  res = await get({
        url:`/ajax/chatroom/search?q=%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88&p=1&page_size=10`
    })  
-   console.log(res);
    this.res = res.info.roomlist
 },
 

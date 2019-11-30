@@ -48,7 +48,6 @@ export default {
       type: 4,
       p: 1
     });
-    console.log(hotRes.successVal.comment.num);
     if(hotRes.successVal.comment.num === undefined){
       return false
     }

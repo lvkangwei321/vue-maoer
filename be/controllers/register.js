@@ -3,8 +3,6 @@ const tools = require('../utils/tools')
 const register = async function(req, res, next) {
   res.set('Content-Type', 'application/json; charset=utf-8')
   let { username, password } = req.body
-  console.log(username);
-  
   let hash = await tools.hash(password)
    await registerModel.register({
     username,

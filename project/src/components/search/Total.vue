@@ -47,7 +47,6 @@ export default {
      await this.$nextTick()
     },
       handleClick(item){
-    console.log(item)
     this.$router.push(`/sound/${item.id}`)
   }
   },

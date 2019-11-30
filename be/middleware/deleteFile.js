@@ -1,7 +1,6 @@
 const fs = require('fs')
 const path = require('path')
 const deleteFile = async function(req,res,next){
-    console.log(req.body.goodsLogo.split('/'));
    var imgName = req.body.goodsLogo.split('/')[4]
    fs.unlink(path.resolve(__dirname, `../public/upload/${imgName}`), (err) => {
     if (err) {

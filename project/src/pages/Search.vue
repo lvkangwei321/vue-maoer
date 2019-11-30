@@ -129,8 +129,6 @@ export default {
 
 
    async handleClick(item){
-     console.log(item);
-     
       this.inputValue = item
       this.keywordsRes = []
      await this.handleSearch()

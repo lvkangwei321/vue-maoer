@@ -53,7 +53,6 @@ const mailBoom = async function(req,res,next){
  const setPassword = async function(req,res){
   res.set('Content-Type', 'application/json; charset=utf-8')
   var {password,username} = req.body
-  console.log(req.body);
   let hash = await tools.hash(password)
   await changePassword({
     "username":username,

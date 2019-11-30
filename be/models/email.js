@@ -24,8 +24,6 @@ const sendMail =  function(email,code){
         //   return User.findOne()
         // }
         const setCode = (data)=>{
-          console.log(data);
-          
           return User.updateOne({'username':data.username},{$set:{"code":data.code}},function(err){
             if(!err){
               console.log('验证码设置成功---');
