@@ -27,7 +27,7 @@
     "store": "^2.0.12",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
-    "swiper": "^5.2.0",
+    "swiper": "^6.5.1",
     "vee-validate": "^3.1.1",
     "vue-aplayer": "^1.6.1",
     "vue-audio-native": "^0.1.36",
